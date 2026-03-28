@@ -1,1 +1,1 @@
-# Chrome-Extension-Practice
+# Extenstion-Practice
