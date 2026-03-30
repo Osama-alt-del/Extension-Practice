@@ -1,0 +1,40 @@
+{
+    "description": "Adds a toolbar button which brings out a popup. The user can choose a beast from the popup. The chosen beast will replace the body content of the page the user is currently visiting.",
+    "manifest_version": 3,
+    "name": "Beastify",
+    "version": "1.0",
+    
+    "icons":{
+        "48":"icons/beasts-48.png"
+    },
+    "permissions": ["activeTab", "scripting"],
+    "browser_specific_settings":{
+        "gecko":{
+            "id": "beastify@mozilla.org",
+            "data_collection_permissions": {
+                "required": ["none"]
+            }
+        }
+        
+    },
+
+    "action":{
+        "default_icon": "icons/beasts-32.png",
+        "theme_icons":[
+            {
+                "light": "icons/beasts-32-light.png",
+                "dark": "icons/beasts32.png",
+                "size": 32
+            }
+        ],
+        "default_title": "Beastify",
+        "default_popup": "popup/choose_beast.html"
+    },
+
+    "web_accessible_resources": [
+        {
+            "resources": ["beasts/*.jpg"],
+            "matches": ["*://*/*"]
+        }
+    ]
+}
