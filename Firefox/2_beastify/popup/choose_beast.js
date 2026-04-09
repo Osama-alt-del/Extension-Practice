@@ -1,0 +1,11 @@
+// Css to hide everything except for elements of class .beastify-image, and store it into a const variable
+const hidePage = 
+`body > :not(.beastify-image) {
+    display: none !important;
+}`;
+i
+// Listen for clicks ont he button, and send appropriate message to the content script in the page.
+function listenForClicks() {
+    document.addEvenListener("click
+}
+
